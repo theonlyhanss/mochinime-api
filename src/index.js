@@ -89,21 +89,6 @@ const customJs = ``;
 
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
   customCss: `
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-    body {
-      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%) !important;
-      min-height: 100vh;
-    }
-    .swagger-ui .topbar {
-      background: linear-gradient(90deg, #6366f1 0%, #a21caf 100%) !important;
-      color: #fff !important;
-      font-weight: 700;
-      font-size: 1.2em;
-      letter-spacing: 0.03em;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      box-shadow: 0 2px 8px rgba(99,102,241,0.08);
-    }
     .swagger-ui .topbar-wrapper img {
       content: url('https://s6.imgcdn.dev/YCmnRv.jpg');
       width: 40px;
@@ -111,19 +96,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
       border-radius: 10px;
       margin-right: 12px;
       box-shadow: 0 2px 8px rgba(99,102,241,0.10);
-    }
-    .swagger-ui, .swagger-ui .info, .swagger-ui .opblock, .swagger-ui .scheme-container, .swagger-ui .responses-inner, .swagger-ui .opblock-summary, .swagger-ui .opblock .opblock-section-header, .swagger-ui .markdown, .swagger-ui .renderedMarkdown {
-      font-family: 'Inter', 'Segoe UI', 'Roboto', 'Poppins', Arial, sans-serif !important;
-      letter-spacing: 0.01em;
-      font-size: 16px;
-    }
-    .swagger-ui .info h1, .swagger-ui .info h2, .swagger-ui .info h3 {
-      font-family: 'Inter', 'Segoe UI', 'Roboto', 'Poppins', Arial, sans-serif !important;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-    .swagger-ui .opblock-summary-description, .swagger-ui .opblock-title_normal {
-      font-weight: 600;
     }
   `,
   customJs: '',
