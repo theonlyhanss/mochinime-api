@@ -10,10 +10,11 @@ export const requestFailed = (req, res, err) => {
     if (status === 503) {
         message = 'Source data is currently unavailable (503 Service Unavailable)';
     }
-    res.status(status).send({
+    res.set('Content-Type', 'application/json');
+    res.status(status).send(JSON.stringify({
         status: false,
         message
-    });
+    }, null, 2));
 }
 
 export const getData = async (url) => {
